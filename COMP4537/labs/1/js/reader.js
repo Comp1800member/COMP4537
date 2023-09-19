@@ -40,7 +40,7 @@ setInterval(function () {
 
 
 function clickBackButton() {
-    window.location.href = 'index.html';
+    window.location.href = '../../../COMP4537/labs/1/index.html';
 }
 
 backButton.addEventListener('click', clickBackButton);
