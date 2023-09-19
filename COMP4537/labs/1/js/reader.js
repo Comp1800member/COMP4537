@@ -4,6 +4,9 @@ const lastUpdated = document.getElementById('last-updated');
 let notes = JSON.parse(localStorage.getItem('notes')) || [];
 const backButton = document.getElementById('back-button');
 
+const textAreaString = "TEXTAREA";
+const brString = "BR";
+const backButtonString = '../../../COMP4537/labs/1/index.html';
 
 function updateTime() {
     //time updating
@@ -20,11 +23,11 @@ function updateNotes() {
 
     notesContainer.innerHTML = "";
     notes.forEach(element => {
-        const newTextArea = document.createElement("TEXTAREA");
+        const newTextArea = document.createElement(textAreaString);
         newTextArea.value = element.text;
         newTextArea.readOnly = true;
     
-        notesContainer.appendChild(document.createElement("br"));
+        notesContainer.appendChild(document.createElement(brString));
         notesContainer.appendChild(newTextArea);
       });
 }
@@ -40,7 +43,7 @@ setInterval(function () {
 
 
 function clickBackButton() {
-    window.location.href = '../../../COMP4537/labs/1/index.html';
+    window.location.href = backButtonString;
 }
 
 backButton.addEventListener('click', clickBackButton);

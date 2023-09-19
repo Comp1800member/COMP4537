@@ -4,13 +4,17 @@ const lastSavedElement = document.getElementById('last-saved');
 let notes = [];
 const backButton = document.getElementById('back-button');
 
+const textAreaString = "TEXTAREA";
+const buttonString = "BUTTON";
+const backButtonString = '../../../COMP4537/labs/1/index.html';
+
 
 class Note {
     constructor() {
-        const textArea = document.createElement("TEXTAREA");
+        const textArea = document.createElement(textAreaString);
         this.textArea = textArea;
 
-        const removeButton = document.createElement("BUTTON");
+        const removeButton = document.createElement(buttonString);
         this.removeButton = removeButton;
 
         this.text = "";
@@ -73,7 +77,7 @@ setInterval(function () {
   }, 2000);
 
 function clickBackButton() {
-    window.location.href = '../../../COMP4537/labs/1/index.html';
+    window.location.href = backButtonString;
 }
 
 backButton.addEventListener('click', clickBackButton);
