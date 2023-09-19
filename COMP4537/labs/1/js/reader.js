@@ -19,7 +19,6 @@ function updateTime() {
 function updateNotes() {
     //getting new notes
     notes = JSON.parse(localStorage.getItem("notes")) || [];
-    console.log(notes);
 
     notesContainer.innerHTML = "";
     notes.forEach(element => {
