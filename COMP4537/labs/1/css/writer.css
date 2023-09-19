@@ -1,0 +1,25 @@
+#writer-title-div {
+    display: flex;
+}
+
+#last-saved {
+    margin-left: auto;
+}
+
+textarea {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+#notes-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+button {
+    width: 100px;
+    margin:7px;
+}
