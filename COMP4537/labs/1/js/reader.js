@@ -9,7 +9,7 @@ function updateTime() {
     //time updating
     const currentTime = new Date()
     lastUpdated.textContent
-    = `Stored at: ${currentTime.toLocaleTimeString()}`;
+    = `Updated at: ${currentTime.toLocaleTimeString()}`;
     
 }
 
